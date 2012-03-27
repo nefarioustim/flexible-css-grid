@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Flexible CSS Grid</title>
+        <style type="text/css">
+            html {
+                overflow-y: scroll;
+                font: 100%/1.3 Calibri, "Helvetica Neue", Arial, sans-serif;
+
+                color: #333;
+            }
+            body {
+                width: 70%;
+                margin: 20px auto;
+
+                background-color: #fff;
+            }
+
+            .container {
+                float: left;
+                width: 100%;
+
+                background-color: #ddd;
+            }
+            .main {
+                margin: 0 200px 0 150px;
+                padding: 10px;
+
+                background-color: #fff;
+            }
+            .navigation {
+                width: 150px;
+                margin-left: -100%;
+            }
+            .related {
+                width: 180px;
+                padding: 10px;
+                margin-left: -200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="main">
+                <h1>Flexible CSS Grid</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div class="related container">
+            <p>This site is a demonstration of a more powerful flexible grid
+            technique using negative margins.</p>
+
+            <p>The side columns both appear after the main content in the source
+            order, and will remain fixed widths of 150px and 200px. We could
+            adjust these to percentages if we so wished.</p>
+        </div>
+        <div class="navigation container">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Archive</li>
+                <li>Kittens</li>
+                <li>Owls</li>
+                <li>Ninjas</li>
+                <li>Contact us</li>
+            </ul>
+        </div>
+    </body>
+</html>
